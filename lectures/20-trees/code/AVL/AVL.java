@@ -74,7 +74,7 @@ class AVL {
         return leftRotate(node);
       }
       if(height(node.right.left) - height(node.right.right) > 0) {
-        // left right case
+        // right left case
         node.right = rightRotate(node.right);
         return leftRotate(node);
       }
